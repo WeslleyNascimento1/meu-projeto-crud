@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 90vh;
     margin: 0;
     background-color: #0F1117;
 }
@@ -16,7 +16,6 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #181C27;
-    max-width: 400px;
     padding: 50px;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
@@ -88,10 +87,15 @@ form {
 
 input {
     padding: 10px;
+    background-color: #30302E;
     border: 1px solid #ccc;
     border-radius: 6px;
-    color: #181C27; /* Texto escuro para contraste com fundo branco */
+    color: white; /* Texto escuro para contraste com fundo branco */
     outline: none;
+}
+
+::placeholder {
+    color: #101520;
 }
 
 button {
@@ -113,12 +117,22 @@ button {
 .linhas {
     display: flex;
     align-items: center;
+    font-size: 12px;
+    
+}
+
+.linhas p {
     color: gray;
 }
 
 hr {
     width: 40%;
     color: gray;
+    border-color: gray;
+}
+
+.cadastre {
+    text-align: center;
 }
 
 a {
