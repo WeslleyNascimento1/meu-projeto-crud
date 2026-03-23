@@ -3,33 +3,76 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-    text-align: left;
-    padding: 40px;
-}
-
-#versao {
-    color: #22C55E;
-    background-color: #052E16;
-    padding: 10px;
-    margin: auto;
-}
-
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
     background-color: #0F1117;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: #181C27;
-    align-items: center;
     max-width: 400px;
-    margin: 20px;
-    padding: 10px;
+    padding: 50px;
     border-radius: 20px;
-    box-shadow: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+
+}
+
+.imagemCarrinho {
+    width: 50px;
+    height: auto;
+
+}
+
+.titulo {
+    margin: 0;
+    font-size: 25px;
+}
+
+.subtitulo {
+    color: gray;
+    margin: 5px 0 0 0;
+    font-size: 12px;
+}
+
+#versao {
+    color: #22C55E;
+    background-color: #052E16;
+    border: 1px solid green;
+    border-radius: 20px;
+    padding: 5px;
+    margin: auto;
+    font-size: small;
+}
+
+.divBoas {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.boasvindas {
+    margin: 0;
+    font-size: 25px;
+}
+
+.subboasvindas {
+    color: grey;
+    font-size: 12px;
+    margin: 5px 0 0 0;
 }
 
 form {
@@ -39,26 +82,46 @@ form {
     max-width: 400px;
     padding: 20px;
     border-radius: 12px;
-    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 6px;
+    color: #181C27; /* Texto escuro para contraste com fundo branco */
+    outline: none;
 }
 
 button {
-    background-color: #181C27;
-    color: white;
+    background-color: #22C55E;
+    color: #052E16;
+    font-weight: bold;
     padding: 12px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
 }
 
+.esqueceusenha {
+    text-align: end;
+    margin: 0;
+    font-size: 12px;
+}
 
+.linhas {
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+hr {
+    width: 40%;
+    color: gray;
+}
 
 a {
     color: #22C55E;
+    text-decoration: none;
 }

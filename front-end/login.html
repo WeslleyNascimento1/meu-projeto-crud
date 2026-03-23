@@ -3,34 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login - MercadoApp</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <header>
-            <h1>MercadoApp</h1>
-            <p>Gestão de Estoque</p>
-        </header>
+        <div class="container">
+            <img class="imagemCarrinho" src="imagens/bolsa-de-compras.png" alt="Sacola de compras">
+            <div class="textos">
+                <h1 class="titulo">MercadoApp</h1>
+                <p class="subtitulo">Gestão de Estoque</p>
+            </div>
+        </div>
+
         <p id="versao">v1.0 - Sistema interno</p>
 
-        <h2>Bem-vindo de volta</h2>
-        <p>Faça login para acessar seu estoque</p>
+        <div class="divBoas">
+            <h2 class="boasvindas">Bem-vindo de volta</h2>
+            <p class="subboasvindas">Faça login para acessar seu estoque</p>
+        </div>
 
         <form action="/criar">
             <label for="email">E-MAIL</label>
-            <input type="email" placeholder="admin@mercado.com">
+            <input type="email" id="email" name="email" placeholder="admin@mercado.com" required>
             <label for="senha">SENHA</label>
-            <input type="password" placeholder="********">
+            <input type="password" id="senha" name="senha" placeholder="********" required>
+            
+            <button type="submit" id="botao">Entrar no sistema</button>
         </form>
 
-        <p id="esqueceusenha"><a href="#">Esqueceu a senha?</a></p>
+        <p class="esqueceusenha"><a href="#">Esqueceu a senha?</a></p>
 
-        <button id="botao"><a href="#">Entrar no sistema</a></button>
-
-        <hr>
-        <p>Ou</p>
-        <hr>
+        <div class="linhas">
+            <hr>
+            <p>Ou</p>
+            <hr>
+        </div>
 
         <p>Não tem conta? <a href="#">Cadastre-se aqui</a></p>
     </main>
