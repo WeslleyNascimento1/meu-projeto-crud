@@ -1,0 +1,47 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90dvh;
+    margin: 0;
+    background-color: #0F1117;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #181C27;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+.imagemCarrinho {
+    width: 50px;
+    height: auto;
+
+}
+
+.titulo {
+    margin: 0;
+    font-size: 25px;
+}
+
+.subtitulo {
+    color: gray;
+    margin: 5px 0 0 0;
+    font-size: 12px;
+}
