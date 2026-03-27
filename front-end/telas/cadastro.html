@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +23,16 @@
 
         <div id="formulario">
             <form action="">
-                <label for="name">NOME</label>
-                <input type="text" name="nome" id="nome" placeholder="Weslley">
-
-                <label for="lastname">SOBRENOME</label>
-                <input type="text" name="nome" id="nome" placeholder="Bezerra">
+                <div class="nome-container">
+                    <div class="campo-nome">
+                        <label for="nome">NOME</label>
+                        <input type="text" name="nome" id="nome" placeholder="Weslley">
+                    </div>
+                    <div class="campo-sobrenome">
+                        <label for="sobrenome">SOBRENOME</label>
+                        <input type="text" name="sobrenome" id="sobrenome" placeholder="Bezerra">
+                    </div>
+                </div>
 
                 <label for="email">E-MAIL</label>
                 <input type="email" name="email" id="email">
@@ -35,11 +40,12 @@
                 <label for="telefone">TELEFONE</label>
                 <input type="tel" name="telefone" id="telefone">
 
+                <label for="perfis">PERFIL DE ACESSO</label>
                 <select name="perfis" id="perfis">
                     <option value="" selected>Selecione um perfil</option>
-                    <option value="">Administrador - acesso total</option>
-                    <option value="">Gerente - sem exclusão</option>
-                    <option value="">Operador - somente leitura e entrada</option>
+                    <option value="">Administrador &mdash; acesso total</option>
+                    <option value="">Gerente &mdash; sem exclusão</option>
+                    <option value="">Operador &mdash; somente leitura e entrada</option>
                 </select>
                 <p>Define o que o usuário pode fazer no sistema</p>
 
@@ -49,8 +55,10 @@
                 <label for="senha">CONFIRMAR SENHA</label>
                 <input type="password">
 
-                <input type="checkbox" class="caixa">
-                <p class="termos">Concordo com os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a> do MercadoApp</p>
+                <div class="termos-container">
+                    <input type="checkbox" class="caixa" id="aceito-termos">
+                    <p class="termos">Concordo com os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a> do MercadoApp</p>
+                </div>
 
                 <button>Criar minha conta</button>
 
@@ -63,7 +71,7 @@
             <hr>
         </div>
 
-        <a href="login.html"><- Voltar ao login</a>
+        <a href="login.html" id="voltar">&larr; Voltar ao login</a>
 
     </main>
 </body>

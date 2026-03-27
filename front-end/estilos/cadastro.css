@@ -17,7 +17,7 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #181C27;
-    padding: 50px;
+    padding: 60px;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
@@ -70,7 +70,6 @@ form {
     flex-direction: column;
     gap: 8px;
     max-width: 400px;
-    padding: 20px;
     border-radius: 12px;
     width: 100%;
     box-sizing: border-box;
@@ -90,6 +89,13 @@ input {
     outline: none;
 }
 
+.nome-container {
+    display: flex;
+    gap: 10px;
+}
+
+
+
 #perfis {
     background-color: #0F1117;
     padding: 10px;
@@ -105,12 +111,7 @@ input {
 }
 
 .caixa {
-    margin: 0;
     float: left;
-}
-
-.termos {
-    color: gray;
 }
 
 ::placeholder {
@@ -130,4 +131,24 @@ input {
 hr {
     width: 35%;
     border-color: gray;
+}
+
+button {
+    background-color: #22C55E;
+    color: #052E16;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#voltar {
+    text-align: center;
+    font-size: 15px;
+}
+
+a {
+    color: #22C55E;
+    text-decoration: none;
 }
