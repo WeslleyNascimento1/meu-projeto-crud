@@ -16,12 +16,12 @@
             </div>
         </div>
         
-        <div>
+        <div id="criarConta">
             <h2>Criar conta</h2>
             <p>Preencha seus dados para acessar o sistema</p>
         </div>
 
-        <div>
+        <div id="formulario">
             <form action="">
                 <label for="name">NOME</label>
                 <input type="text" name="nome" id="nome" placeholder="Weslley">
@@ -35,8 +35,35 @@
                 <label for="telefone">TELEFONE</label>
                 <input type="tel" name="telefone" id="telefone">
 
+                <select name="perfis" id="perfis">
+                    <option value="" selected>Selecione um perfil</option>
+                    <option value="">Administrador - acesso total</option>
+                    <option value="">Gerente - sem exclusão</option>
+                    <option value="">Operador - somente leitura e entrada</option>
+                </select>
+                <p>Define o que o usuário pode fazer no sistema</p>
+
+                <label for="senha">SENHA</label>
+                <input type="password">
+                
+                <label for="senha">CONFIRMAR SENHA</label>
+                <input type="password">
+
+                <input type="checkbox" class="caixa">
+                <p class="termos">Concordo com os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a> do MercadoApp</p>
+
+                <button>Criar minha conta</button>
+
             </form>
         </div>
+
+        <div class="linhas">
+            <hr>
+            <p>já tem conta?</p>
+            <hr>
+        </div>
+
+        <a href="login.html"><- Voltar ao login</a>
 
     </main>
 </body>

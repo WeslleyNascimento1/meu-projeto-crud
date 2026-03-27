@@ -47,3 +47,87 @@ main {
     font-size: 12px;
 }
 
+#criarConta {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#criarConta h2 {
+    margin: 0;
+    font-size: 25px;
+}
+
+#criarConta p {
+    color: gray;
+    font-size: 12px;
+    margin: 5px 0 0 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    color: gray;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    background-color: #30302E;
+    border-radius: 6px;
+    color: white;
+    outline: none;
+}
+
+#perfis {
+    background-color: #0F1117;
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+}
+
+#formulario p {
+    margin: 0;
+    color: gray;
+    font-size: 12px;
+    margin: 5px 0 0 0;
+}
+
+.caixa {
+    margin: 0;
+    float: left;
+}
+
+.termos {
+    color: gray;
+}
+
+::placeholder {
+    color: #101520;
+}
+
+.linhas {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.linhas p{
+    color: gray;
+}
+
+hr {
+    width: 35%;
+    border-color: gray;
+}
