@@ -1,4 +1,7 @@
 * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -7,27 +10,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90dvh;
-    margin: 10px;
+    min-height: 100vh;
     background-color: #0F1117;
-
+    padding: 20px;
 }
 
 main {
     display: flex;
     flex-direction: column;
     background-color: #181C27;
-    padding: 60px;
+    padding: 40px;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 500px;
 }
 
 .container {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     padding: 20px;
-
 }
 
 .imagemCarrinho {
@@ -69,10 +73,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    max-width: 400px;
-    border-radius: 12px;
     width: 100%;
-    box-sizing: border-box;
 }
 
 label {
@@ -84,34 +85,55 @@ label {
 input {
     padding: 10px;
     background-color: #30302E;
+    border: 1px solid #3e3e3c;
     border-radius: 6px;
     color: white;
     outline: none;
+    width: 100%;
 }
 
 .nome-container {
     display: flex;
     gap: 10px;
+    width: 100%;
 }
 
-
+.campo-nome, .campo-sobrenome {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 #perfis {
     background-color: #0F1117;
     padding: 10px;
     border-radius: 6px;
     outline: none;
+    width: 100%;
 }
 
 #formulario p {
-    margin: 0;
     color: gray;
     font-size: 12px;
     margin: 5px 0 0 0;
 }
 
-.caixa {
-    float: left;
+.termos-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.termos-container input[type="checkbox"] {
+    width: auto;
+    margin-top: 3px;
+}
+
+.termos p {
+    font-size: 13px;
+    line-height: 1.4;
 }
 
 ::placeholder {
@@ -120,6 +142,8 @@ input {
 
 .linhas {
     display: flex;
+    padding: 20px;
+    gap: 12px;
     align-items: center;
     font-size: 14px;
 }
@@ -146,9 +170,22 @@ button {
 #voltar {
     text-align: center;
     font-size: 15px;
+    margin-top: 20px;
 }
 
 a {
     color: #22C55E;
     text-decoration: none;
+}
+
+/* Responsividade para Celulares Pequenos */
+@media (max-width: 480px) {
+    main {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .nome-container {
+        flex-direction: column;
+    }
 }
