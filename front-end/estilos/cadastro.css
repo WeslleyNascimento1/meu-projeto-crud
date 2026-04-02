@@ -28,10 +28,10 @@ main {
 
 .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 10px;
-    padding: 20px;
+    margin-bottom: 30px;
 }
 
 .imagemCarrinho {
@@ -41,8 +41,8 @@ main {
 }
 
 .titulo {
-    margin: 0;
     font-size: 25px;
+    text-align: center;
 }
 
 .subtitulo {
@@ -153,7 +153,7 @@ input {
 }
 
 hr {
-    width: 35%;
+    flex: 1;
     border-color: gray;
 }
 
@@ -165,6 +165,11 @@ button {
     border: none;
     border-radius: 6px;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: #16a34a;
+    transition: background-color 0.2s ease-in-out;
 }
 
 #voltar {
@@ -187,5 +192,9 @@ a {
 
     .nome-container {
         flex-direction: column;
+    }
+
+    .titulo {
+        font-size: 22px;
     }
 }

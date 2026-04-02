@@ -1,4 +1,7 @@
 * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -9,7 +12,9 @@ body {
     align-items: center;
     min-height: 90vh;
     margin: 0;
+    min-height: 100vh;
     background-color: #0F1117;
+    padding: 20px;
 }
 
 main {
@@ -17,19 +22,23 @@ main {
     flex-direction: column;
     background-color: #181C27;
     padding: 50px;
+    padding: 40px;
     border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 450px;
 }
 
-.container {
+.container-header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 10px;
     padding: 20px;
-
+    margin-bottom: 30px;
 }
 
-.imagemCarrinho {
+.imagem-logo {
     width: 50px;
     height: auto;
 
@@ -38,12 +47,15 @@ main {
 .titulo {
     margin: 0;
     font-size: 25px;
+    text-align: center;
 }
 
 .subtitulo {
     color: gray;
     margin: 5px 0 0 0;
     font-size: 12px;
+    font-size: 13px;
+    text-align: center;
 }
 
 #versao {
@@ -56,11 +68,13 @@ main {
     font-size: small;
 }
 
-.divBoas {
+form {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     padding: 20px;
+    gap: 15px;
+    width: 100%;
 }
 
 .boasvindas {
@@ -75,6 +89,7 @@ main {
 }
 
 form {
+.campo {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -94,11 +109,14 @@ label {
 
 input {
     padding: 10px;
+    padding: 12px;
     background-color: #30302E;
     border: 1px solid #ccc;
+    border: 1px solid #3e3e3c;
     border-radius: 6px;
     color: white;
     outline: none;
+    width: 100%;
 }
 
 
@@ -114,6 +132,8 @@ button {
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .esqueceusenha {
@@ -121,6 +141,9 @@ button {
     margin: 0;
     font-size: 12px;
     margin-bottom: 10px;
+    }
+button:hover {
+    background-color: #16a34a;
 }
 
 .linhas {
@@ -140,13 +163,25 @@ hr {
     border-color: gray;
 }
 
-.cadastre {
+.links-footer {
     text-align: center;
     color: gray;
     font-size: 13px;
+    font-size: 15px;
+    margin-top: 25px;
 }
 
 a {
     color: #22C55E;
     text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 30px 20px;
+    }
+
+    .titulo {
+        font-size: 22px;
+    }
 }
